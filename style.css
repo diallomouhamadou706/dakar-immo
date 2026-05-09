@@ -21,14 +21,13 @@ header{
     background-color: #1E3A8A;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 90px;
     align-items: center;
 }
 
-.logo h1{
-    color: white;
-    text-align: center;
-    margin-bottom: 15px;
+.logo img{
+    width: 150px;
 }
 
 /* NAVIGATION */
@@ -37,7 +36,9 @@ nav ul{
     display: flex;
     justify-content:right;
     list-style: none;
-    gap: 20px;
+    gap: 40px;
+    font-size: 14px;
+
 }
 
 nav ul li a{
@@ -53,7 +54,7 @@ nav ul li a:hover{
 /* HERO */
 
 .hero{
-    background-image: url("../images/hero-immo.jpg");
+    background-image: url("villa25.jpg");
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -62,6 +63,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .hero-text{
@@ -204,13 +206,33 @@ textarea{
 }
 
 /* FOOTER */
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+    
+}
+.col1{
+    flex: 3;
+    min-width: 220px;
 
-footer{
+}
+ footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #0F172A;
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+
+} 
+.md{
+ text-align: center;
+ margin-top: 20px;
+ padding-top: 15px;
+ border-top: 1px solid rgba(255,255,255,0.3);
 }
 
 /* RESPONSIVE */
