@@ -1,4 +1,4 @@
-/* RESET */
+/* reset */
 
 *{
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* le body */
 
 body{
     font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@ body{
 
 }
 
-/* HEADER */
+/*le header */
 
 header{
     background-color: #1E3A8A;
@@ -25,12 +25,18 @@ header{
     gap: 90px;
     align-items: center;
 }
+.menu-toggle{
+    display: none;
+    font-size: 32px;
+    color black:
+    cursor: pointer;
+}
 
 .logo img{
     width: 150px;
 }
 
-/* NAVIGATION */
+/* les navigation */
 
 nav ul{
     display: flex;
@@ -51,9 +57,9 @@ nav ul li a:hover{
     color: #F59E0B;
 }
 
-/* HERO */
+/* les titres */
 
-.hero{
+.titre{
     background-image: url("villa25.jpg");
     background-size: cover;
     background-position: center;
@@ -66,25 +72,25 @@ nav ul li a:hover{
 
 }
 
-.hero-text{
+.titretext{
     background-color: rgba(0,0,0,0.5);
     padding: 30px;
     border-radius: 10px;
     color: white;
 }
 
-.hero-text h2{
+.titretext h2{
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.hero-text p{
+.titretext p{
     margin-bottom: 20px;
 }
 
-/* BUTTON */
+/* les button */
 
-.btn{
+.button{
     display: inline-block;
     background-color: #F59E0B;
     color: white;
@@ -94,11 +100,11 @@ nav ul li a:hover{
     margin: 5px;
 }
 
-.btn:hover{
-    background-color: #d97706;
+.butt:hover{
+ background-color: #d97706;
 }
 
-/* SECTIONS */
+/* section*/
 
 section{
     padding: 50px 20px;
@@ -110,7 +116,7 @@ section h2{
     color: #1E3A8A;
 }
 
-/* PRESENTATION */
+/* .presentation*/
 
 .presentation p{
     max-width: 700px;
@@ -118,7 +124,7 @@ section h2{
     text-align: center;
 }
 
-/* CARDS */
+/*cars*/
 
 .cards{
     display: grid;
@@ -157,7 +163,7 @@ section h2{
     font-weight: bold;
 }
 
-/* STATISTIQUES */
+ /*.statistiques*/
 
 .statistiques{
     background-color: #1E3A8A;
@@ -169,14 +175,13 @@ section h2{
 }
 
 .stat h3{
-    color: #F59E0B;
     font-size: 35px;
     margin-bottom: 10px;
 }
 
-/* FORMULAIRE */
+/*formulaire */
 
-form{
+.formulaire{
     max-width: 700px;
     margin: auto;
     background-color: white;
@@ -205,8 +210,11 @@ textarea{
     resize: none;
     height: 120px;
 }
+.formules{
+    width: 50px;
+}
 
-/* FOOTER */
+/*footer*/
 .footer-content{
     display: flex;
     justify-content: space-between;
@@ -229,6 +237,12 @@ textarea{
     color: white;
 
 } 
+
+.lienrapide a{
+    text-decoration: none;
+    color: white;
+
+}
 .md{
  text-align: center;
  margin-top: 20px;
@@ -236,34 +250,43 @@ textarea{
  border-top: 1px solid rgba(255,255,255,0.3);
 }
 
-/* RESPONSIVE */
+/*responsive*/
 
-@media(max-width: 900px){
-
-    .cards{
-        grid-template-columns: repeat(2,1fr);
-    }
-
+@media (max-width: 768px){ 
+header{
+    padding: 15px;
+}   
+nav{
+    width: 100px;
 }
-
-@media(max-width: 600px){
-
-    nav ul{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .cards{
-        grid-template-columns: 1fr;
-    }
-
-    .statistiques{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .hero-text h2{
-        font-size: 28px;
-    }
+.menu-toggle{
+    display: block;
+}
+nav ul{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: #0F172A;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+nav ul.active{
+    display: flex;
+}
+nav ul li{
+    margin: 5px 0;
+}
+.cards{
+    grid-template-columns: 1fr;
+}
+.statistiques{
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-content{
+    flex-direction: column;
+    gap: 20 px;
+}
 
 }
